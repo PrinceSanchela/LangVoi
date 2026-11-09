@@ -1,45 +1,63 @@
-# 🎙️ LangVoi Voice Studio Pro [Build 2.2 — Professional Edition]
+# 🎙️ LangVoi Voice Studio Pro [v2.2.0]
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)](https://github.com/PrinceSanchela/LangVoi)
-[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Royalty--Free%20Desktop-22c55e.svg)](LICENSE.txt)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/PrinceSanchela/LangVoi/actions)
-[![Language Detection](https://img.shields.io/badge/Languages-150%2B%20World%20Languages-8B5CF6.svg)](core/languages_db.py)
-[![Architecture](https://img.shields.io/badge/Architecture-Native%20Win32%20%2B%20DSP-f59e0b.svg)](core/voice_analyzer.py)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/princesanchela)
-[![Download on Gumroad](https://img.shields.io/badge/Gumroad-Download%20%2F%20Pro%20License-pink.svg?logo=gumroad)](https://codeprince.gumroad.com/l/langvoi)
+[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE.txt)
+[![Tests](https://img.shields.io/badge/Tests-13%2F13%20Passing-brightgreen.svg)](tests/)
+[![Languages](https://img.shields.io/badge/Languages-99%2B%20World%20Languages-8B5CF6.svg)](core/languages_db.py)
+[![itch.io](https://img.shields.io/badge/Download-itch.io%20Installer-fa5c5c?logo=itchdotio&logoColor=white)](https://codeprince.itch.io/langvoi-voice-studio-pro)
+[![Gumroad](https://img.shields.io/badge/Gumroad-Pro%20Release-pink.svg?logo=gumroad)](https://codeprince.gumroad.com/l/langvoi)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?logo=buy-me-a-coffee)](https://buymeacoffee.com/princesanchela)
 
-> **Enterprise-Grade Native Windows Audio Engineering Workstation, Laboratory Acoustic Biometrics & Neural Whisper Language Identification.**  
+> **Enterprise-Grade Native Windows Audio Workstation, Digital Signal Processing (DSP) & Real-Time Neural Whisper Spoken-Language Identification.**  
 > **Conceptualized, Architected, and Engineered by Prince Sanchela.**
 
 ---
 
-## 📖 Table of Contents
-1. [Overview & Philosophy](#-overview--philosophy)
-2. [Key Features & Architecture](#-key-features--architecture)
-3. [Multi-Tier Language Identification Architecture](#-multi-tier-language-identification-architecture)
-4. [How to Download & Launch](#-how-to-download--launch)
-5. [How to Publish This Software for Free (Global Distribution)](#-how-to-publish-this-software-for-free-global-distribution)
-6. [Codebase & Folder Structure](#-codebase--folder-structure)
-7. [Automated Testing & Quality Assurance](#-automated-testing--quality-assurance)
-8. [Keyboard Shortcuts Reference](#-keyboard-shortcuts-reference)
-9. [Monetization, Sponsorship & Commercial Licensing](#-monetization-sponsorship--commercial-licensing)
-10. [Community Supporters & Hall of Fame](#-community-supporters--hall-of-fame)
-11. [Authorship & Legal License](#-authorship--legal-license)
+## ⚡ Direct 1-Click Installer (For Non-Developers)
+
+If you just want to install and use LangVoi on your Windows PC without installing Python, Git, or dependencies:
+
+👉 **[Download Standalone Windows Installer on itch.io](https://codeprince.itch.io/langvoi-voice-studio-pro)**  
+👉 **[Download on Gumroad](https://codeprince.gumroad.com/l/langvoi)**  
+👉 **[Download from GitHub Releases (v2.2.0)](https://github.com/PrinceSanchela/LangVoi/releases/tag/v2.2.0)**
+
+* **Single Executable Installer**: Download `LangVoi_Setup.exe` and double-click to install.
+* **Zero Dependencies**: Bundles its own high-speed runtime, audio drivers, and neural speech models.
+* **100% Offline & Private**: Zero external cloud calls — your audio stays strictly on your local PC.
 
 ---
 
-## 🌟 Overview & Philosophy
+## 📋 Table of Contents
+1. [Overview & Philosophy](#-overview--philosophy)
+2. [Workstation Interface](#-workstation-interface)
+3. [Key Features](#-key-features)
+4. [Developer Manual Setup Guide (From Source)](#-developer-manual-setup-guide-from-source)
+5. [Automated Testing & Quality Assurance](#-automated-testing--quality-assurance)
+6. [Codebase Architecture & Structure](#-codebase-architecture--structure)
+7. [Supported Languages (99+ Global Languages)](#-supported-languages-99-global-languages)
+8. [Keyboard Shortcuts Reference](#-keyboard-shortcuts-reference)
+9. [Support, Sponsorship & Commercial Licensing](#-support-sponsorship--commercial-licensing)
+10. [Authorship & License](#-authorship--license)
 
-**LangVoi Voice Studio Pro** is an enterprise-grade native Windows desktop software application (`.exe`), conceptualized, architected, and engineered by **Prince Sanchela**. 
+---
 
-Styled with the tactile workflow and aesthetic of classic mastering workstations (such as **Sound Forge Pro, Adobe Audition, and Cool Edit Pro**), it bridges analog mastering studio hardware with modern scientific speech AI:
-- **Universal Multi-Format Audio Loading**: Instant zero-transcode decoding for WAV, MP3, M4A, AAC, FLAC, OGG, OPUS, WMA, AIFF, and WebM.
-- **High-Definition Live Microphone Studio**: Direct WASAPI low-latency recording with real-time waveform plotting.
-- **Pure In-Memory Neural Speech Identification**: Identifies 90+ spoken languages and dialects in under 2 seconds without writing temporary files to disk or spawning external console windows.
-- **Laboratory-Calibrated Acoustic Biometrics**: Computes fundamental frequency ($F_0$), pitch stability (${\Delta}F_0$), vocal registers, Voice Activity Detection (VAD), and SNR using NumPy autocorrelation DSP.
+## 🎯 Overview & Philosophy
 
-```
+**LangVoi Voice Studio Pro** is an open-source, high-performance audio workstation engineered by **Prince Sanchela**. 
+
+Styled after classic mastering hardware and digital workstations (such as *Adobe Audition, Sound Forge Pro, and Cool Edit Pro*), it bridges hardware-level acoustic DSP with modern transformer speech artificial intelligence:
+
+* **Universal Audio Codec Engine**: Direct streaming playback and decoding for WAV, MP3, M4A, AAC, FLAC, OGG, OPUS, WMA, AIFF, and WebM.
+* **Low-Latency WASAPI Studio**: Low-jitter live microphone input with sample-accurate waveform visualization.
+* **Neural Whisper LID Engine**: Ultra-fast, zero-cloud spoken-language identification resolving 99+ languages in under 2 seconds.
+* **Laboratory Acoustic Biometrics**: Computes fundamental frequency ($F_0$), pitch stability (${\Delta}F_0$), vocal registers, Voice Activity Detection (VAD), dynamic range, and Signal-to-Noise Ratio (SNR).
+
+---
+
+## 🖥️ Workstation Interface
+
+```text
 +-----------------------------------------------------------------------------------------+
 |                                LANGVOI VOICE STUDIO PRO                                 |
 |                         Designed & Engineered by Prince Sanchela                        |
@@ -53,10 +71,10 @@ Styled with the tactile workflow and aesthetic of classic mastering workstations
 | /  \/  \  /  \/  \/  \    /  \  /  \/  \    /  \  /  \/  \  /  \         | R [||||||||] |
 +-----------------------------------------------------------------------------------------+
 |  LANGVOI NEURAL WHISPER LID-9000 SCREEN                                                 |
-|  Detected: 🇺🇸 English (Latin) - 98.2% CONFIDENCE                                       |
+|  Detected: 🌐 English (Latin Script) - 98.4% CONFIDENCE                                 |
 |  [ Transcript: "Good morning, this is an enterprise audio stream analysis." ]          |
 +-----------------------------------------------------------------------------------------+
-|  LABORATORY TELEMETRY RACK (8 Laboratory Instruments)                                   |
+|  LABORATORY TELEMETRY RACK (8 Laboratory Acoustic Instruments)                          |
 |  [Pitch: 128 Hz (C3)]  [Register: Baritone]  [SNR: 28.4 dB]  [Speech Ratio: 82%]        |
 |  [Jitter/Delta: 18Hz]  [Dyn Range: 34 dB]   [ZCR: 0.082]    [Rhythm: Stress-Timed]     |
 +-----------------------------------------------------------------------------------------+
@@ -68,317 +86,171 @@ Styled with the tactile workflow and aesthetic of classic mastering workstations
 
 ---
 
-## ✨ Key Features & Architecture
+## ✨ Key Features
 
-### 1. 🌐 LangVoi Neural Whisper LID Engine
-- **In-Memory Streaming**: Direct in-process Python HTTP transport to deep acoustic transformer models with zero external subprocesses, zero console flashing, and zero disk writes.
-- **Comprehensive Coverage**: Resolves **90+ worldwide languages and dialects** with **98%+ confidence**.
-- **Speech Intelligence**: Generates full spoken transcripts, word counts, active duration, and writing script detection (Latin, Devanagari, Hanzi, Arabic, Cyrillic, Greek, Hangul, Kana, Thai).
+### 1. 🧠 Neural Whisper LID Engine
+* **In-Memory Streaming**: High-throughput neural language classification with zero disk writes.
+* **99+ Global Languages**: Instant detection for English, Spanish, Hindi, French, German, Mandarin Chinese, Japanese, Russian, Arabic, Portuguese, Bengali, and 85+ others.
+* **Confidence Scoring**: Probability distribution across top candidate languages.
 
-### 2. 📊 8 Scientific Laboratory Telemetry Instruments
-1. **Fundamental Pitch ($F_0$)**: Autocorrelation pitch detector calibrated from 50 Hz to 500 Hz, displaying exact Hz and the closest chromatic musical note (e.g. C3, A4, F#2).
-2. **Vocal Register Classification**: Categorizes voice type into **Bass, Baritone, Tenor, Alto, Mezzo-Soprano, and Soprano**.
-3. **Pitch Dynamics & Tonal Stability (${\Delta}F_0$)**: Standard deviation of vocal pitch contour measuring expressive inflection vs monotone speech.
-4. **Voice Activity Detection (VAD Ratio)**: Calculates active voiced speech percentage vs background pause intervals.
-5. **Speech Tempo & Syllable Rhythm**: Estimates syllables-per-second, Words-Per-Minute (WPM), and linguistic rhythm typology (*Stress-timed, Syllable-timed, Mora-timed*).
-6. **Signal-to-Noise Ratio (SNR in dB)**: Evaluates background noise floor against peak speech energy to grade audio quality (*Studio Broadcast, Clean, Moderate, Noisy*).
-7. **Dynamic Range ($dB$) Spread**: 95th vs 5th energy percentile spread for mastering dynamic assessment.
-8. **Zero-Crossing Rate (ZCR) & Vocalic Formant Ratio**: Measures fricative and consonant density against open vowel resonance.
+### 2. 🎚️ Dual-Channel Master VU Meters
+* Real-time Left and Right channel decibel monitors calibrated from **-60 dBFS to +6 dBFS**.
+* High-precision peak indicators with smooth exponential decay ballistics.
 
-### 3. 🎛️ Master Oscilloscope & Visualizers
-- **Interactive Scrubber**: Click or drag anywhere along the waveform to seek with sub-millisecond precision.
-- **Calibrated Stereo LED Ladder VU Meters**: Peak and RMS visual meters with 0 dB clipping indicators.
-- **64-Band FFT Spectral Analyzer**: Real-time frequency response visualization with 2D time-frequency spectrogram heatmap and pitch contour overlay.
+### 3. 📊 64-Band Real-Time Spectral Lab
+* Fast Fourier Transform (FFT) decomposing audio from 20 Hz to 20,000 Hz.
+* Logarithmic frequency spacing matching the human ear's cochlear response.
 
-### 4. 📚 Searchable 150+ World Languages Directory
-- Built-in encyclopedic language database indexing ISO-639-1, ISO-639-3, and BCP-47 codes, language families, primary scripts, speaker populations, and geographic regions.
+### 4. 🔬 Acoustic Telemetry & Voice Biometrics
+* **$F_0$ Pitch Tracking**: Real-time autocorrelation fundamental frequency tracking.
+* **Vocal Register Classification**: Sub-bass, Bass, Baritone, Tenor, Alto, Mezzo-Soprano, Soprano.
+* **Signal Metrics**: Voice Activity Detection (VAD), Zero-Crossing Rate (ZCR), Dynamic Range, and SNR.
 
 ---
 
-## 🧠 Multi-Tier Language Identification Architecture
+## 🛠️ Developer Manual Setup Guide (From Source)
 
-LangVoi uses a resilient 3-tier fallback architecture:
+Developers, researchers, and audio engineers can run and modify LangVoi directly from the source code.
 
-```mermaid
-flowchart TD
-    Audio["Audio Input: File or Live Mic"] --> Normalize["16kHz Mono Optimization"]
-    Normalize --> Tier1{"Tier 1: LangVoi Neural Whisper Engine"}
-    Tier1 -- "Online & Available" --> Result1["High-Precision Detection + Transcript (98% Conf)"]
-    Tier1 -- "Unreachable / Timeout" --> Tier2{"Tier 2: Multi-Model Speech Probing"}
-    Tier2 -- "Model Match" --> Result2["Transcript & Script Verification (85% Conf)"]
-    Tier2 -- "Offline / No Internet" --> Tier3["Tier 3: Autonomous Acoustic Prosody Profiler"]
-    Tier3 --> Result3["100% Offline Pitch & Vocalic Classifier (70% Conf)"]
-```
-
-1. **Tier 1 — LangVoi Neural Whisper LID Engine**: Primary online engine delivering high-speed neural acoustic language classification and speech transcription.
-2. **Tier 2 — Multi-Model Speech Probing**: Parallel script validation cross-referencing recognized vocabulary against native linguistic frequency tables.
-3. **Tier 3 — Autonomous Acoustic Prosodic Profiler (100% Offline)**: Operates without internet connection using local NumPy DSP biometrics (pitch contour, rhythm cadence, and formant spectral distribution).
+### Prerequisites
+* **Operating System**: Windows 10 or Windows 11 (64-bit)
+* **Python**: Python 3.10, 3.11, 3.12, 3.13, or 3.14
+* **Git**: [Git for Windows](https://git-scm.com/download/win)
 
 ---
 
-## 🚀 How to Download & Launch
+### Step-by-Step Installation:
 
-### Method 1: Native Windows Executable (`.EXE`) — Recommended
-Run the compiled standalone desktop launcher directly:
-```cmd
-LangVoi_Studio.exe
-```
-*(Runs silently with custom icon, no black command console window).*
-
-### Method 2: 1-Click Desktop Setup Wizard
-Double-click:
-```cmd
-Install_LangVoi.bat
-```
-- Installs LangVoi to `%LOCALAPPDATA%\Programs\LangVoi`.
-- Generates a Windows Desktop shortcut with high-resolution icon.
-- Adds an entry to the Windows Start Menu.
-- Registers an Uninstaller in Windows Installed Apps (Settings).
-
-### Method 3: Run from Python Source
-```bash
-# 1. Clone repository
+#### 1. Clone the Repository
+```powershell
 git clone https://github.com/PrinceSanchela/LangVoi.git
 cd LangVoi
+```
 
-# 2. Install dependencies
+#### 2. Create a Virtual Environment
+```powershell
+python -m venv .venv
+```
+
+#### 3. Activate the Virtual Environment
+* On Windows PowerShell:
+  ```powershell
+  .venv\Scripts\Activate.ps1
+  ```
+* On Windows Command Prompt (cmd):
+  ```cmd
+  .venv\Scripts\activate.bat
+  ```
+
+#### 4. Install Dependencies
+```powershell
+pip install --upgrade pip
 pip install -r requirements.txt
+```
 
-# 3. Launch application
+#### 5. Launch LangVoi Voice Studio Pro
+```powershell
 python run.py
 ```
-
-### Method 4: 1-Click Windows Batch Launcher
-Double-click:
-```cmd
-LangVoi_Studio.bat
-```
-
----
-
-## 🌍 How to Publish This Software for Free (Global Distribution)
-
-You can publish and distribute **LangVoi Voice Studio Pro** to users worldwide **completely free of cost** (zero hosting fees, zero bandwidth charges):
-
-### Step 1: Create a Free GitHub Repository
-1. Sign in to [GitHub](https://github.com) (free account).
-2. Click **New Repository**.
-3. Name it: `LangVoi`.
-4. Set visibility to **Public**.
-5. Do **not** initialize with a README (this repository already has the complete professional suite).
-6. Push this repository to GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: Initial release of LangVoi Voice Studio Pro v2.2.0"
-   git branch -M main
-   git remote add origin https://github.com/PrinceSanchela/LangVoi.git
-   git push -u origin main
-   ```
-   *(Note: The included `.gitignore` automatically protects your private `.pfx` certificate and build caches).*
-
-### Step 2: Publish a Free Downloadable Release (GitHub Releases)
-GitHub provides unlimited, fast, free global file hosting for software releases:
-1. On your GitHub repository page, click **Releases** > **Draft a new release**.
-2. Create a new tag: `v2.2.0`.
-3. Set the Release Title: `LangVoi Voice Studio Pro v2.2.0 — Official Windows Release`.
-4. In the release notes, paste highlights from `CHANGELOG.md`.
-5. Attach the release binaries:
-   - `LangVoi_Studio_v2.2_Package.zip` (generate via `powershell scripts\package_release.ps1`)
-   - `LangVoi_Setup.exe` (generated via `scripts\build_binaries.bat`)
-   - `LangVoi_Studio_Setup_v2.2.exe` (optional, compiled via `installer_script.iss`)
-6. Click **Publish Release**!
-7. Anyone in the world can now download the `.exe` or `.zip` with one click!
-
-### Step 3: Free Windows Package Manager (`winget`) Submission (Optional)
-Windows 10 & 11 users can install your software directly from PowerShell with `winget install langvoi`:
-1. Submit a manifest to the free Microsoft [winget-pkgs repository](https://github.com/microsoft/winget-pkgs).
-2. Users can install your app simply by typing:
-   ```powershell
-   winget install PrinceSanchela.LangVoi
-   ```
-
-### Step 4: Free Landing Page with GitHub Pages (Optional)
-Enable **GitHub Pages** under your repository **Settings > Pages** to host a free product website at `https://PrinceSanchela.github.io/LangVoi`.
-
----
-
-## 📂 Codebase & Folder Structure
-
-```
-LangVoi/
-├── .github/
-│   └── workflows/
-│       ├── ci.yml                 # Automated CI testing on Windows (Python 3.10-3.12)
-│       └── release.yml            # Automated GitHub Release builder & publisher
-│
-├── app/                           # Native Presentation Layer (Tkinter + Canvas DSP)
-│   ├── __init__.py
-│   ├── main_window.py             # Master responsive workstation interface & menus
-│   ├── theme.py                   # Classic DAW color palette, fonts & HiDPI metrics
-│   ├── components/                # Modular hardware racks & controls
-│   │   ├── __init__.py
-│   │   ├── oscilloscope.py        # Master waveform canvas with decibel ruler & scrub head
-│   │   ├── vu_meters.py           # Calibrated stereo LED ladder peak VU meters
-│   │   ├── language_rack.py       # LID-9000 backlit LCD display & candidate ladder
-│   │   ├── telemetry_rack.py      # 8 scientific laboratory telemetry instruments
-│   │   ├── spectral_lab.py        # 64-band FFT spectrum analyzer & 2D heatmap
-│   │   ├── recorder_panel.py      # Live microphone recording subrack & audio devices
-│   │   ├── toolbar.py             # 3D embossed toolbar & digital LED timecode
-│   │   ├── translation_panel.py   # Spoken transcript & translation controls
-│   │   └── status_bar.py          # Windows status bar with engine telemetry
-│   └── dialogs/                   # Desktop dialog windows
-│       ├── __init__.py
-│       ├── help_dialog.py         # Comprehensive 8-tab User Manual & System Guide
-│       ├── languages_dialog.py    # Searchable 150+ World Languages Directory
-│       ├── export_dialog.py       # Formal PDF/HTML, JSON, and CSV export dialog
-│       └── about_dialog.py        # System diagnostics & author attribution
-│
-├── core/                          # Audio Physics, DSP & Language Identification
-│   ├── __init__.py
-│   ├── audio_engine.py            # SoundDevice audio streaming, playback & peak analysis
-│   ├── audio_loader.py            # Universal multi-format decoder (WAV, MP3, FLAC, M4A, OGG)
-│   ├── voice_analyzer.py          # NumPy DSP: Autocorrelation F0, SNR, VAD, Timbre
-│   ├── language_detector.py       # LangVoi Neural Whisper LID Engine (Pure In-Memory)
-│   └── languages_db.py            # Comprehensive 150+ languages directory & lookup
-│
-├── assets/                        # High-resolution icons & vector branding
-│   ├── app_icon.ico               # Multi-size Windows application icon (16x16 to 256x256)
-│   ├── app_icon_256.png
-│   ├── app_icon_512.png
-│   └── app_icon_1024.png
-│
-├── samples/                       # Bundled test speech audio files
-│   ├── sample_english_male.wav
-│   ├── sample_spanish_female.wav
-│   └── sample_tonal_mandarin.wav
-│
-├── scripts/                       # Build automation & release tooling
-│   ├── build_binaries.bat         # Compiles launcher.cs and installer.cs with csc.exe
-│   ├── package_release.ps1        # Creates clean distribution zip excluding private keys
-│   ├── sign_binaries.ps1          # Authenticode digital code signing script
-│   └── Sign_Inno_Setup.bat        # Digital signature hook for Inno Setup compiler
-│
-├── tests/                         # Automated unit & integration test suite
-│   ├── __init__.py
-│   ├── test_languages_db.py       # Database lookup and query tests
-│   ├── test_audio_loader.py       # Multi-format decoding and normalization tests
-│   ├── test_voice_analyzer.py     # NumPy pitch autocorrelation and SNR tests
-│   └── test_language_detector.py  # Script detection, text matching and LID tests
-│
-├── LangVoi_Studio.exe             # Compiled Win32 silent launcher (.exe)
-├── LangVoi_Setup.exe              # Compiled Win32 native setup wizard (.exe)
-├── LangVoi_Studio.bat             # 1-Click Windows batch launcher fallback
-├── Install_LangVoi.bat            # 1-Click native Windows desktop setup script
-├── Run_Setup.bat                  # Setup launcher with temp path redirection
-├── install.ps1                    # PowerShell desktop & start menu installer engine
-├── launcher.cs                    # C# Win32 Silent Launcher source
-├── installer.cs                   # C# Win32 Setup Wizard source
-├── installer_script.iss           # Inno Setup 6 professional setup compiler script
-├── pyproject.toml                 # Modern PEP 517/518 build definition & packaging
-├── setup.py                       # Standard Python package setup
-├── requirements.txt               # Production dependencies
-├── requirements-dev.txt           # Developer & test dependencies
-├── .gitignore                     # Git exclusion rules (safeguarding private keys)
-├── README.md                      # Complete project documentation
-├── LICENSE                        # Official license file for GitHub UI badge
-├── LICENSE.txt                    # End-User License Agreement (EULA)
-├── MONETIZATION_GUIDE.md          # 0-Risk monetization blueprint & setup guide
-├── CHANGELOG.md                   # Version release notes
-├── CONTRIBUTING.md                # Open-source contribution guidelines
-└── SECURITY.md                    # Security policy & vulnerability reporting
-```
+*(You can also run `python main.py` directly).*
 
 ---
 
 ## 🧪 Automated Testing & Quality Assurance
 
-LangVoi includes an automated test suite verifying digital signal processing, database queries, and language identification fallbacks:
+LangVoi includes a comprehensive automated test suite covering digital signal processing, audio loader codecs, neural language detection, and language database resolution.
 
-```bash
-# Run all unit tests
+Run all tests with:
+```powershell
 python -m unittest discover -s tests
-
-# Or with pytest
-pytest tests/ -v
 ```
 
-All 13 unit tests execute in under 1 second:
-- ✅ `test_database_loaded`: Verifies 150+ language metadata catalog integrity.
-- ✅ `test_search_languages`: Tests ISO code and name queries.
-- ✅ `test_load_sample_file`: Validates audio decoding and float32 normalization.
-- ✅ `test_hz_to_note`: Tests chromatic pitch mapping ($A_4 = 440\text{ Hz}$, $C_4 = 261.63\text{ Hz}$).
-- ✅ `test_classify_vocal_register`: Tests Bass, Baritone, Tenor, Alto, Soprano classification.
-- ✅ `test_analyze_audio`: Verifies SNR, VAD ratio, duration, and pitch metrics.
-- ✅ `test_detect_script`: Validates Latin, Devanagari, Hanzi, Arabic, and Cyrillic script parsing.
-- ✅ `test_match_text_to_language`: Tests lexical matching and confidence scoring.
-- ✅ `test_acoustic_fallback_pipeline`: Validates zero-network acoustic prosody fallback.
+Expected output:
+```text
+Ran 13 tests in 0.512s
+
+OK
+```
+
+---
+
+## 📂 Codebase Architecture & Structure
+
+```text
+LangVoi/
+├── app/                        # Graphical User Interface (PyQt6)
+│   ├── components/             # Reusable DAW Widgets & Racks
+│   │   ├── oscilloscope.py     # Interactive waveform & timeline scrubber
+│   │   ├── vu_meters.py        # Dual-channel peak/RMS VU meters
+│   │   ├── spectral_lab.py     # 64-band FFT real-time spectrum analyzer
+│   │   ├── language_rack.py    # Neural language detection display
+│   │   ├── telemetry_rack.py   # Acoustic biometrics instruments
+│   │   ├── recorder_panel.py   # Live microphone capture panel
+│   │   ├── toolbar.py          # DAW transport controls
+│   │   └── status_bar.py       # Engine status bar
+│   ├── dialogs/                # Workstation Dialogs (About, Export, Help, Languages)
+│   ├── main_window.py          # Master DAW Window & Event Bus
+│   └── theme.py                # Midnight Slate / Cyan Hardware Styling
+├── core/                       # Digital Signal Processing & Machine Learning Engine
+│   ├── audio_engine.py         # Low-latency WASAPI audio playback & recording
+│   ├── audio_loader.py         # Universal multi-format audio decoder
+│   ├── language_detector.py    # Neural Whisper LID engine
+│   ├── voice_analyzer.py       # Autocorrelation pitch tracking & acoustic DSP
+│   └── languages_db.py         # Database of 99+ world languages & ISO-639 codes
+├── assets/                     # High-resolution logos, badges, and application icons
+├── samples/                    # Curated multi-lingual audio test samples (.wav)
+├── tests/                      # Automated unit test suite (13 passing tests)
+├── .github/                    # GitHub Actions workflows & FUNDING.yml
+├── requirements.txt            # Production runtime dependencies
+├── requirements-dev.txt        # Development & testing tooling
+├── run.py                      # Main application bootstrap entrypoint
+├── main.py                     # DAW engine coordinator
+├── LICENSE.txt                 # MIT License & Terms of Service
+└── README.md                   # Workstation documentation
+```
+
+---
+
+## 🌐 Supported Languages (99+ Global Languages)
+
+LangVoi detects and analyzes spoken audio across **99+ languages**, including:
+
+| Region | Supported Languages |
+| :--- | :--- |
+| **Americas & Europe** | English, Spanish, French, German, Italian, Portuguese, Russian, Ukrainian, Polish, Dutch, Swedish, Norwegian, Danish, Finnish, Greek, Czech, Romanian, Hungarian, Bulgarian |
+| **South Asia** | Hindi, Bengali, Punjabi, Gujarati, Marathi, Tamil, Telugu, Kannada, Malayalam, Urdu, Nepali, Sinhala |
+| **East & Southeast Asia** | Mandarin Chinese, Cantonese, Japanese, Korean, Vietnamese, Thai, Indonesian, Malay, Tagalog/Filipino, Burmese, Khmer, Lao |
+| **Middle East & Africa** | Arabic, Persian/Farsi, Hebrew, Turkish, Swahili, Amharic, Yoruba, Hausa, Zulu, Afrikaans |
 
 ---
 
 ## ⌨️ Keyboard Shortcuts Reference
 
-| Shortcut | Action | Description |
-| :--- | :--- | :--- |
-| **`Space`** | **Play / Pause** | Toggle audio playback |
-| **`Ctrl + O`** | **Open Audio File** | Open audio file picker (WAV, MP3, M4A, FLAC, OGG, WebM) |
-| **`F5`** | **Re-Analyze Audio**| Re-execute acoustic biometrics and language identification |
-| **`Ctrl + P`** | **Export Report** | Open formal HTML, JSON, and CSV Laboratory Report dialog |
-| **`Ctrl + C`** | **Copy Transcript** | Copy recognized speech transcript to Windows clipboard |
-| **`Ctrl + L`** | **Languages Directory**| Open searchable 150+ World Languages Directory |
-| **`F1`** | **User Manual** | Launch interactive multi-tab User Manual & System Guide |
-| **`Esc`** | **Stop & Rewind** | Stop playback and reset playhead to beginning |
-| **`Home`** | **Seek to Start** | Seek playhead to 0.0 seconds |
+| Shortcut | Action |
+| :--- | :--- |
+| `Ctrl + O` | Open Audio File (WAV, MP3, M4A, FLAC, OGG, OPUS, WMA, etc.) |
+| `Space` | Toggle Audio Playback / Pause |
+| `Ctrl + R` | Start / Stop Live Microphone Studio Recording |
+| `Ctrl + L` | Re-run Neural Language Identification |
+| `Ctrl + E` | Export Laboratory Telemetry & Voice Biometrics Report |
+| `F1` | Open Interactive Help Documentation |
+| `Ctrl + Q` | Safely Exit Application |
 
 ---
 
-## 💖 Monetization, Sponsorship & Commercial Licensing
+## ☕ Support, Sponsorship & Commercial Licensing
 
-LangVoi Voice Studio Pro is free and open-source for personal, scientific, and educational use. If you find this workstation valuable or wish to deploy it commercially, you can support development through these channels:
+If LangVoi has helped your research, audio production, or development workflow, consider supporting ongoing development:
 
-### 1. Support the Creator / Tip the Developer
-- ☕ **Buy Me a Coffee**: [buymeacoffee.com/princesanchela](https://www.buymeacoffee.com/princesanchela)
-- 💖 **GitHub Sponsors**: [github.com/sponsors/PrinceSanchela](https://github.com/sponsors/PrinceSanchela)
-- 💳 **PayPal Direct**: [paypal.me/princesanchela](https://paypal.me/princesanchela)
-
-### 2. Commercial Studio License ($19)
-For production studios, call centers, podcasts, and commercial software deployments, purchase an official royalty-free Commercial License on Gumroad:
-- 🛒 **Gumroad Store**: [codeprince.gumroad.com/l/langvoi](https://codeprince.gumroad.com/l/langvoi)
-*(Includes official commercial license certificate, priority email support, and installer package).*
-
-### 3. Custom Audio Engineering & B2B Consulting
-Need custom DSP features, automated speech analysis pipelines, or server-side integration?
-- Custom batch audio processing pipelines (WAV, MP3, FLAC, M4A)
-- Speech language detection and telephony routing models
-- Headless Linux/Windows REST API servers
-- Proprietary digital signal processing algorithms
-
-📧 **Contact**: `contact.princesanchela@gmail.com`  
-📖 **Full Monetization Setup Blueprint**: See [`MONETIZATION_GUIDE.md`](MONETIZATION_GUIDE.md) for complete instructions.
+* ☕ **Buy Me a Coffee**: [buymeacoffee.com/princesanchela](https://buymeacoffee.com/princesanchela)
+* 💖 **GitHub Sponsors**: [github.com/sponsors/PrinceSanchela](https://github.com/sponsors/PrinceSanchela)
+* 🛍️ **Gumroad Pro Release**: [codeprince.gumroad.com/l/langvoi](https://codeprince.gumroad.com/l/langvoi)
+* 🎮 **itch.io**: [codeprince.itch.io/langvoi-voice-studio-pro](https://codeprince.itch.io/langvoi-voice-studio-pro)
 
 ---
 
-## 🌟 Community Supporters & Hall of Fame
+## 👤 Authorship & License
 
-A heartfelt thank you to our generous sponsors and patrons on [Buy Me a Coffee](https://buymeacoffee.com/princesanchela) who make independent open-source audio engineering possible:
-
-> *Become a supporter! Tip 2 or more coffees ($6+) on [Buy Me a Coffee](https://buymeacoffee.com/princesanchela) to have your name, avatar, or project link permanently commemorated here.*
-
-| Supporter | Tier / Contribution | Date |
-| :--- | :--- | :--- |
-| *Your Name Here* | ☕ Coffee Patron | *Join our Hall of Fame* |
-
----
-
-## 📜 Authorship & Legal License
-
-**LangVoi Voice Studio Pro** was conceptualized, architected, and engineered by **Prince Sanchela**.
-
-- **Lead Architect & Creator**: Prince Sanchela
-- **Copyright**: © 2026 Prince Sanchela. All Worldwide Rights Reserved.
-- **License Agreement**: Royalty-Free Desktop End-User License Agreement (EULA). See [`LICENSE.txt`](LICENSE.txt) for complete legal terms.
-- **Privacy Assurance**: 100% of audio DSP calculations occur locally on your machine. Zero user audio is harvested or sold.
-
-For technical inquiries, licensing, and collaboration:
-- **Author**: Prince Sanchela
-- **Project**: LangVoi Voice Studio Pro
+* **Lead Architect & Creator**: **Prince Sanchela**
+* **Contact & Inquiries**: `contact.princesanchela@gmail.com`
+* **License**: Released under the **[MIT License](LICENSE.txt)**.
