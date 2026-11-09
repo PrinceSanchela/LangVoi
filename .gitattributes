@@ -1,0 +1,43 @@
+# ==============================================================================
+# LangVoi Voice Studio Pro - Git Attributes & Line Endings Configuration
+# ==============================================================================
+
+# Set default behavior to automatically normalize text files to LF on checkout
+* text=auto
+
+# Python, Markdown, Config & Metadata (Normalize to LF)
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Windows Shell & Scripting (Must preserve CRLF on Windows)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+*.cs text eol=crlf
+
+# Binary Files & Audio Formats (Never convert line endings)
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.flac binary
+*.m4a binary
+*.opus binary
+*.aiff binary
+*.wma binary
+*.webm binary
+
+# Graphical Assets & Binaries
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg text
+*.exe binary
+*.dll binary
+*.zip binary

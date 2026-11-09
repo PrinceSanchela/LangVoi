@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 LangVoi User Manual & Documentation
+    url: https://github.com/PrinceSanchela/LangVoi#readme
+    about: Read the complete user manual, DSP specifications, and keyboard shortcut guide.
+  - name: 💬 Discussions & Community Support
+    url: https://github.com/PrinceSanchela/LangVoi/discussions
+    about: Ask questions, discuss audio engineering workflows, and share acoustic research.
