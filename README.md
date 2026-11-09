@@ -1,13 +1,32 @@
 # 🎙️ LangVoi Voice Studio Pro [v2.2.0]
 
+<div align="center">
+
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)](https://github.com/PrinceSanchela/LangVoi)
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE.txt)
 [![Tests](https://img.shields.io/badge/Tests-13%2F13%20Passing-brightgreen.svg)](tests/)
 [![Languages](https://img.shields.io/badge/Languages-99%2B%20World%20Languages-8B5CF6.svg)](core/languages_db.py)
-[![itch.io](https://img.shields.io/badge/Download-itch.io%20Installer-fa5c5c?logo=itchdotio&logoColor=white)](https://codeprince.itch.io/langvoi-voice-studio-pro)
-[![Gumroad](https://img.shields.io/badge/Gumroad-Pro%20Release-pink.svg?logo=gumroad)](https://codeprince.gumroad.com/l/langvoi)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?logo=buy-me-a-coffee)](https://buymeacoffee.com/princesanchela)
+
+<br/>
+
+<a href="https://codeprince.itch.io/langvoi-voice-studio-pro">
+  <img src="https://img.shields.io/badge/Download_Installer-itch.io-fa5c5c?style=for-the-badge&logo=itchdotio&logoColor=white" height="38" alt="Download on itch.io" />
+</a>
+&nbsp;&nbsp;
+<a href="https://codeprince.gumroad.com/l/langvoi">
+  <img src="https://img.shields.io/badge/Get_Pro_Package-Gumroad-FF90E8?style=for-the-badge&logo=gumroad&logoColor=black" height="38" alt="Download on Gumroad" />
+</a>
+&nbsp;&nbsp;
+<a href="https://www.buymeacoffee.com/princesanchela">
+  <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-Donate_☕-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" height="38" alt="Buy Me A Coffee" />
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/sponsors/PrinceSanchela">
+  <img src="https://img.shields.io/badge/Sponsor-GitHub_Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" height="38" alt="GitHub Sponsors" />
+</a>
+
+</div>
 
 > **Enterprise-Grade Native Windows Audio Workstation, Digital Signal Processing (DSP) & Real-Time Neural Whisper Spoken-Language Identification.**  
 > **Conceptualized, Architected, and Engineered by Prince Sanchela.**
@@ -16,11 +35,17 @@
 
 ## ⚡ Direct 1-Click Installer (For Non-Developers)
 
-If you just want to install and use LangVoi on your Windows PC without installing Python, Git, or dependencies:
+If you want to install and use LangVoi on your Windows computer with zero setup, zero terminal commands, and zero Python required:
 
-👉 **[Download Standalone Windows Installer on itch.io](https://codeprince.itch.io/langvoi-voice-studio-pro)**  
-👉 **[Download on Gumroad](https://codeprince.gumroad.com/l/langvoi)**  
-👉 **[Download from GitHub Releases (v2.2.0)](https://github.com/PrinceSanchela/LangVoi/releases/tag/v2.2.0)**
+<div align="center">
+
+| Distribution Channel | Description | Link |
+| :--- | :--- | :---: |
+| 🎮 **itch.io** | Single `LangVoi_Setup.exe` (Pay what you want / Free) | [**Download on itch.io**](https://codeprince.itch.io/langvoi-voice-studio-pro) |
+| 🛍️ **Gumroad** | Pro Standalone Package & Commercial License | [**Get on Gumroad**](https://codeprince.gumroad.com/l/langvoi) |
+| 📦 **GitHub Releases** | Official v2.2.0 Standalone Assets | [**GitHub Releases**](https://github.com/PrinceSanchela/LangVoi/releases/tag/v2.2.0) |
+
+</div>
 
 * **Single Executable Installer**: Download `LangVoi_Setup.exe` and double-click to install.
 * **Zero Dependencies**: Bundles its own high-speed runtime, audio drivers, and neural speech models.
@@ -38,7 +63,8 @@ If you just want to install and use LangVoi on your Windows PC without installin
 7. [Supported Languages (99+ Global Languages)](#-supported-languages-99-global-languages)
 8. [Keyboard Shortcuts Reference](#-keyboard-shortcuts-reference)
 9. [Support, Sponsorship & Commercial Licensing](#-support-sponsorship--commercial-licensing)
-10. [Authorship & License](#-authorship--license)
+10. [Community Supporters & Hall of Fame](#-community-supporters--hall-of-fame)
+11. [Authorship & License](#-authorship--license)
 
 ---
 
@@ -167,7 +193,7 @@ python -m unittest discover -s tests
 
 Expected output:
 ```text
-Ran 13 tests in 0.512s
+Ran 13 tests in 0.503s
 
 OK
 ```
@@ -238,19 +264,37 @@ LangVoi detects and analyzes spoken audio across **99+ languages**, including:
 
 ---
 
-## ☕ Support, Sponsorship & Commercial Licensing
+## 💖 Support, Sponsorship & Commercial Licensing
 
-If LangVoi has helped your research, audio production, or development workflow, consider supporting ongoing development:
+If LangVoi has helped your research, audio engineering, or production workflow, you can support ongoing development or purchase a commercial license:
 
-* ☕ **Buy Me a Coffee**: [buymeacoffee.com/princesanchela](https://buymeacoffee.com/princesanchela)
-* 💖 **GitHub Sponsors**: [github.com/sponsors/PrinceSanchela](https://github.com/sponsors/PrinceSanchela)
-* 🛍️ **Gumroad Pro Release**: [codeprince.gumroad.com/l/langvoi](https://codeprince.gumroad.com/l/langvoi)
-* 🎮 **itch.io**: [codeprince.itch.io/langvoi-voice-studio-pro](https://codeprince.itch.io/langvoi-voice-studio-pro)
+<div align="center">
+
+| Tier | Purpose | Link |
+| :--- | :--- | :---: |
+| ☕ **Buy Me a Coffee** | One-time tips, coffee donations, and supporter rewards | <a href="https://buymeacoffee.com/princesanchela"><img src="https://img.shields.io/badge/Buy_Me_A_Coffee-Donate_☕-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" height="32" alt="Buy Me A Coffee" /></a> |
+| 🛍️ **Gumroad Pro Package** | Pre-built commercial standalone installer package | <a href="https://codeprince.gumroad.com/l/langvoi"><img src="https://img.shields.io/badge/Gumroad-Get_Pro_Package-FF90E8?style=for-the-badge&logo=gumroad&logoColor=black" height="32" alt="Gumroad" /></a> |
+| 🎮 **itch.io Community** | Pay-what-you-want downloads & community donations | <a href="https://codeprince.itch.io/langvoi-voice-studio-pro"><img src="https://img.shields.io/badge/itch.io-Support_&_Download-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white" height="32" alt="itch.io" /></a> |
+| 💖 **GitHub Sponsors** | Monthly recurring sponsorship with avatar listed in Hall of Fame | <a href="https://github.com/sponsors/PrinceSanchela"><img src="https://img.shields.io/badge/Sponsor-GitHub_Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" height="32" alt="GitHub Sponsors" /></a> |
+
+</div>
 
 ---
 
-## 👤 Authorship & License
+## 🏛️ Community Supporters & Hall of Fame
+
+Special recognition to our community supporters and sponsors:
+
+| Supporter | Tier | Contribution |
+| :--- | :--- | :--- |
+| **Prince Sanchela** | Founding Architect | Architectural design & neural LID DSP engine |
+| *Your Name Here* | Community Sponsor | [Become a Sponsor](https://buymeacoffee.com/princesanchela) to get featured! |
+
+---
+
+## 👤 Authorship & Legal License
 
 * **Lead Architect & Creator**: **Prince Sanchela**
 * **Contact & Inquiries**: `contact.princesanchela@gmail.com`
-* **License**: Released under the **[MIT License](LICENSE.txt)**.
+* **Official Repository**: [https://github.com/PrinceSanchela/LangVoi](https://github.com/PrinceSanchela/LangVoi)
+* **License**: Released under the **[MIT License](LICENSE.txt)**. Free for personal, academic, and commercial audio engineering use.
