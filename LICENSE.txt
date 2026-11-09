@@ -1,11 +1,11 @@
 ================================================================================
-                    LANGVOI VOICE STUDIO PRO — SOFTWARE LICENSE AGREEMENT
+                    LANGVOI VOICE STUDIO PRO - SOFTWARE LICENSE AGREEMENT
                      END-USER LICENSE AGREEMENT & TERMS OF SERVICE
 ================================================================================
 
-PRODUCT: LangVoi Voice Studio Pro [Build 2.2 — HD Native Edition]
+PRODUCT: LangVoi Voice Studio Pro [Build 2.2 - HD Native Edition]
 ARCHITECT & CREATOR: Prince Sanchela
-COPYRIGHT: © 2026 Prince Sanchela. All Worldwide Rights Reserved.
+COPYRIGHT: (C) 2026 Prince Sanchela. All Worldwide Rights Reserved.
 DATE: November 2026
 
 PLEASE READ THIS END-USER LICENSE AGREEMENT ("AGREEMENT") CAREFULLY BEFORE 
@@ -32,7 +32,7 @@ You may:
 2. INTELLECTUAL PROPERTY & PROPRIETARY RIGHTS
 --------------------------------------------------------------------------------
 The Software, including but not limited to its source code, compiled binaries, 
-architectural design, digital audio workstation (DAW) interface, LID-9000 
+architectural design, digital audio workstation (DAW) interface, neural 
 multilingual discriminator, acoustic autocorrelation pitch tracking algorithms, 
 telemetry instruments, and documentation, is the exclusive proprietary creation 
 and intellectual property of Prince Sanchela.
@@ -69,10 +69,10 @@ Prince Sanchela, you shall not:
 5. PRIVACY & LOCAL SYSTEM ASSURANCE
 --------------------------------------------------------------------------------
 Prince Sanchela is committed to acoustic privacy and workstation security:
-  • LangVoi Voice Studio Pro runs natively on your local Win32 desktop.
-  • Audio recordings and imported sound files are stored locally on your device.
-  • No audio recordings or personal voice biometrics are harvested or sold.
-  • The application requires zero intrusive system drivers or telemetry spyware.
+  * LangVoi Voice Studio Pro runs natively on your local Win32 desktop.
+  * Audio recordings and imported sound files are stored locally on your device.
+  * No audio recordings or personal voice biometrics are harvested or sold.
+  * The application requires zero intrusive system drivers or telemetry spyware.
 
 --------------------------------------------------------------------------------
 6. DISCLAIMER OF WARRANTIES
@@ -94,5 +94,6 @@ scientific Python, NumPy DSP, and audio engineering communities.
 
 For support, inquiries, and licensing requests:
 Lead Architect: Prince Sanchela
-Software: LangVoi Voice Studio Pro — Native Windows Desktop PC Audio Workstation
+Software: LangVoi Voice Studio Pro - Native Windows Desktop PC Audio Workstation
+Contact: contact.princesanchela@gmail.com
 ================================================================================
