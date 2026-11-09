@@ -1,7 +1,7 @@
 ; =====================================================================
-; LangVoi Voice Studio Pro - Inno Setup Professional Installer Script
-; Created & Engineered by: Prince Sanchela
-; Compiles: LangVoi_Setup.exe (Classic Step-by-Step Setup Wizard)
+; LangVoi Voice Studio Pro - Inno Setup 7 Standalone Installer Script
+; Architect: Prince Sanchela
+; Outputs: release_binaries\LangVoi_Setup.exe
 ; =====================================================================
 
 #define MyAppName "LangVoi Voice Studio Pro"
@@ -21,7 +21,7 @@ AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 
-; Classic Step-by-Step Wizard Pages (Welcome -> License -> Folder -> Start Menu -> Tasks -> Install -> Finish)
+; Classic Inno Setup Multi-Step Wizard
 DisableWelcomePage=no
 DisableDirPage=no
 DisableProgramGroupPage=no
@@ -29,22 +29,21 @@ DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 LicenseFile=LICENSE.txt
 
-; Flexible user privileges: Works for both standard users and administrators
+; Flexible Privileges (works without admin or with admin)
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 
-; Output configuration
-OutputDir=.
+; Output directly to the git-ignored release_binaries folder
+OutputDir=release_binaries
 OutputBaseFilename=LangVoi_Setup
 SetupIconFile=assets\app_icon.ico
-UninstallDisplayIcon={app}\assets\app_icon.ico
+UninstallDisplayIcon={app}\{#MyAppExeName}
 UninstallDisplayName={#MyAppName}
 
-; Compression & Modern Styling
+; Compression & 64-bit native styling
 Compression=lzma2/ultra64
 SolidCompression=yes
 WizardStyle=modern
-WizardSizePercent=100
 ArchitecturesInstallIn64BitMode=x64compatible
 
 [Languages]
@@ -54,31 +53,13 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-; Main Executable & Launchers
-Source: "{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "LangVoi_Studio.bat"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Install_LangVoi.bat"; DestDir: "{app}"; Flags: ignoreversion
-Source: "install.ps1"; DestDir: "{app}"; Flags: ignoreversion
-Source: "run.py"; DestDir: "{app}"; Flags: ignoreversion
-Source: "main.py"; DestDir: "{app}"; Flags: ignoreversion
-Source: "requirements.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "README.md"; DestDir: "{app}"; Flags: ignoreversion
-Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "launcher.cs"; DestDir: "{app}"; Flags: ignoreversion
-
-; Codebase Modules & Assets
-Source: "assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "app\*"; DestDir: "{app}\app"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "core\*"; DestDir: "{app}\core"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "samples\*"; DestDir: "{app}\samples"; Flags: ignoreversion recursesubdirs createallsubdirs
+; Standalone compiled binaries (ZERO source code files)
+Source: "dist\LangVoi_Studio\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
-; Start Menu Shortcut
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\assets\app_icon.ico"; WorkingDir: "{app}"
 Name: "{group}\Uninstall {#MyAppName}"; Filename: "{uninstallexe}"
-; Desktop Shortcut
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\assets\app_icon.ico"; WorkingDir: "{app}"; Tasks: desktopicon
 
 [Run]
-; Auto-Launch after installation completes with checkbox
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent

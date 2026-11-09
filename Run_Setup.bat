@@ -8,12 +8,11 @@ if not exist "%CUSTOM_TEMP%" mkdir "%CUSTOM_TEMP%"
 set "TEMP=%CUSTOM_TEMP%"
 set "TMP=%CUSTOM_TEMP%"
 
-if exist "installer_output\LangVoi_Studio_Setup_v2.2.exe" (
-    start "" "installer_output\LangVoi_Studio_Setup_v2.2.exe"
-) else if exist "LangVoi_Studio_Setup_v2.2.exe" (
-    start "" "LangVoi_Studio_Setup_v2.2.exe"
+if exist "%~dp0LangVoi_Setup.exe" (
+    start "" "%~dp0LangVoi_Setup.exe"
+) else if exist "%~dp0installer_output\LangVoi_Studio_Setup_v2.2.exe" (
+    start "" "%~dp0installer_output\LangVoi_Studio_Setup_v2.2.exe"
 ) else (
-    echo [INFO] LangVoi_Studio_Setup_v2.2.exe not found in current directory.
-    echo Please compile installer_script.iss using Inno Setup Compiler.
+    echo [INFO] LangVoi_Setup.exe not found in current directory.
     pause
 )

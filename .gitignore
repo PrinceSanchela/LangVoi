@@ -98,3 +98,9 @@ $RECYCLE.BIN/
 *.log
 *.tmp
 *.bak
+
+# Standalone Releases & Executables (Not pushed to GitHub)
+release_binaries/
+
+*.exe
+*.spec
