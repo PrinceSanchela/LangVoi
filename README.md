@@ -83,34 +83,7 @@ Styled after classic mastering hardware and digital workstations (such as *Adobe
 
 ## 🖥️ Workstation Interface
 
-```text
-+-----------------------------------------------------------------------------------------+
-|                                LANGVOI VOICE STUDIO PRO                                 |
-|                         Designed & Engineered by Prince Sanchela                        |
-+-----------------------------------------------------------------------------------------+
-| [File] [Edit] [View] [Transport] [Analysis] [Languages] [Help]                          |
-+-----------------------------------------------------------------------------------------+
-| [Open Audio] [Live Mic] [Play] [Pause] [Stop] [Re-Analyze] [Export Report]  [00:00:00]  |
-+-----------------------------------------------------------------------------------------+
-|  MASTER OSCILLOSCOPE (Interactive Scrubbing & Dynamic dBFS Ruler)        | VU METERS    |
-|  /\  /\    /\  /\  /\      /\    /\  /\      /\    /\  /\    /\          | L [||||||||] |
-| /  \/  \  /  \/  \/  \    /  \  /  \/  \    /  \  /  \/  \  /  \         | R [||||||||] |
-+-----------------------------------------------------------------------------------------+
-|  LANGVOI NEURAL WHISPER LID-9000 SCREEN                                                 |
-|  Detected: 🌐 English (Latin Script) - 98.4% CONFIDENCE                                 |
-|  [ Transcript: "Good morning, this is an enterprise audio stream analysis." ]          |
-+-----------------------------------------------------------------------------------------+
-|  LABORATORY TELEMETRY RACK (8 Laboratory Acoustic Instruments)                          |
-|  [Pitch: 128 Hz (C3)]  [Register: Baritone]  [SNR: 28.4 dB]  [Speech Ratio: 82%]        |
-|  [Jitter/Delta: 18Hz]  [Dyn Range: 34 dB]   [ZCR: 0.082]    [Rhythm: Stress-Timed]     |
-+-----------------------------------------------------------------------------------------+
-|  64-BAND FFT SPECTRAL LAB & TIME-FREQUENCY HEATMAP                                      |
-+-----------------------------------------------------------------------------------------+
-| Ready. Audio engine active. High-DPI Per-Monitor Aware.                                 |
-+-----------------------------------------------------------------------------------------+
-```
-
----
+<img width="959" height="504" alt="Screenshot 2026-11-09 160155" src="https://github.com/user-attachments/assets/1e82d2a4-4100-4c0e-b9d1-8b47dcfa9bb0" />
 
 ## ✨ Key Features
 
